@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Deathless Record{% endblock %}
+
+{% block body %}
+
+<header class="masthead">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#page-top"><img src="img/profile_dt_record.png" alt="..." class="img-fluid" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        {% if app.user %}
+            <li class="nav-item" ><a class="nav-link" href="#" style="text-decoration: none; color: #ff8504  ;">{{app.user.firstname }}  {{app.user.lastname}}</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{path('app_logout')}}">Déconnexion</a></li>
+        {% else %}
+            <li class="nav-item"><a class="nav-link" href="{{path('app_login')}}">Connexion / Inscription</a></li>
+        {% endif %}
+        
+        
+        
+         
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+            </div>
+           
+        </header>
+        <div class="tutorial container text-center my-5 ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/_XVyPbTgACE?controls=0" allowfullscreen></iframe>
+        </div>
+ <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Actualité</h2>
+                    <h3 class="section-subheading text-muted">Retrouver l'actualité de la Deathless Record.</h3>
+                </div>
+        <div class="row justify-content-around custom-line text-center">
+         <div class="col-3">
+                        <span class="fa-stack fa-4x">
+                            <a href="https://www.instagram.com/p/CreBZJyouDH/" target="_blank"><img src="img/recrutementDt.jpg" alt="..." class="img-fluid" /></a>
+                        </span>
+                        <h4 class="my-3 text-uppercase">Recrutement Deathless Record</h4>
+                        <p class="text-muted">La Deathless Record recrute de nouveau membre dans l'association.</p>
+                    </div>
+                    <div class="col-3">
+                        <span class="fa-stack fa-4x">
+                            <a href="#" target="_blank"><img src="img/springConcert.jpg" alt="spring concert" class="img-fluid"></a>
+                        </span>
+                        <h4 class="my-3 text-uppercase">SPRING CONCERT</h4>
+                        <p class="text-muted">Retrouver ici les différentes photos et vidéos du concert organisé par la Deathless Record.</p>
+                    </div>
+                    <div class="col-3">
+                        <span class="fa-stack fa-4x">
+                            <a href="https://linkr.bio/R1luv." target="_blank"><img src="img/Nostal21000.jpg" alt="Nostal21000" class="img-fluid"></a>
+                        </span>
+                        <h4 class="my-3 text-uppercase">Nostal21000</h4>
+                        <p class="text-muted">Retrouver le nouvelle album de l'artiste R1Luv.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        
+{% endblock %}
