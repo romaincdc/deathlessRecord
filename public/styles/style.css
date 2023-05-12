@@ -90,6 +90,9 @@
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 }
+.nav-item{
+    font-size: 1.3rem;
+}
 
 *,
 *::before,
