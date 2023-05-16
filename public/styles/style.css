@@ -1041,6 +1041,15 @@ progress {
   .offset-sm-11 {
     margin-left: 91.66666667%;
   }
+  .team{
+    padding: 30px 0 30px 0;
+  }
+  .center {
+    margin-bottom: 30px;
+    text-align: center;
+    
+  }
+  
   .g-sm-0,
   .gx-sm-0 {
     --bs-gutter-x: 0;

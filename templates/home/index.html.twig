@@ -5,14 +5,14 @@
 
 {% block body %}
 
-<header class="masthead">
+
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" >
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase me-auto mb-2 mb-lg-2">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Accueil</a>
@@ -43,59 +43,30 @@
             </div>
         </nav>
     </div>
+    <header class="masthead">
 </header>
 <div class="tutorial container text-center my-5 ratio ratio-16x9">
     <iframe src="https://www.youtube.com/embed/_XVyPbTgACE?controls=0" allowfullscreen></iframe>
 </div>
-<section class="page-section" id="services" style="width:100%; margin-right:auto; margin-left:auto;">
+<section class="page-section team" id="services" style="width:100%; margin-right:auto; margin-left:auto;">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Actualité</h2>
             <h3 class="section-subheading text-muted ">Retrouver l'actualité de la Deathless Record.</h3>
 
         </div>
-        <div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative">
-                <div class="position-relative">
-                    <a href="https://www.instagram.com/p/CreBZJyouDH/" target="_blank"><img src="img/recrutementDt.jpg" alt="..." class="img-fluid"/></a>
-                </div>
-                <div text-center p-4">
-                    <h4 class="my-3 text-uppercase">Recrutement Deathless Record</h4>
-                    <p class="text-muted text-center-xs">La Deathless Record recrute de nouveau membre dans l'association.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative">
-                <div class="position-relative">
-                    <a href="https://www.instagram.com/p/CreBZJyouDH/" target="_blank"><img src="img/recrutementDt.jpg" alt="..." class="img-fluid"/></a>
-                </div>
-                <div text-center p-4">
-                    <h4 class="my-3 text-uppercase">Recrutement Deathless Record</h4>
-                    <p class="text-muted text-center-xs">La Deathless Record recrute de nouveau membre dans l'association.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item position-relative">
-                <div class="position-relative">
-                    <a href="https://www.instagram.com/p/CreBZJyouDH/" target="_blank"><img src="img/recrutementDt.jpg" alt="..." class="img-fluid"/></a>
-                </div>
-                <div text-center p-4">
-                    <h4 class="my-3 text-uppercase">Recrutement Deathless Record</h4>
-                    <p class="text-muted text-center-xs">La Deathless Record recrute de nouveau membre dans l'association.</p>
-                </div>
-            </div>
-        </div>
+        
         <div class="row justify-content-around custom-line text-center">
-            <div class="col-3 col-xl-3 col-lg-4">
+        
+         <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
                 <span class="fa-stack fa-4x">
                     <a href="https://www.instagram.com/p/CreBZJyouDH/" target="_blank"><img src="img/recrutementDt.jpg" alt="..." class="img-fluid"/></a>
                 </span>
                 <h4 class="my-3 text-uppercase">Recrutement Deathless Record</h4>
                 <p class="text-muted text-center-xs">La Deathless Record recrute de nouveau membre dans l'association.</p>
             </div>
-            <div class="col-3 col-xl-3 col-lg-4">
+            <div class="col-lg-4 col-sm-6 mb-4">
                 <span class="fa-stack fa-4x">
                     <a href="#" target="_blank">
                         <img src="img/springConcert.jpg" alt="spring concert" class="img-fluid"></a>
@@ -103,7 +74,7 @@
                     <h4 class="my-3 text-uppercase">SPRING CONCERT</h4>
                     <p class="text-muted text-center-xs">Retrouver ici les différentes photos et vidéos du concert organisé par la Deathless Record.</p>
                 </div>
-                <div class="col-3 col-xl-3 col-lg-4">
+                <div class="col-lg-4 col-sm-6 mb-4">
                     <span class="fa-stack fa-4x">
                         <a href="https://linkr.bio/R1luv." target="_blank">
                             <img src="img/Nostal21000.jpg" alt="Nostal21000" class="img-fluid"></a>
@@ -113,7 +84,10 @@
                     </div>
 
                 </div>
+                </div>
+                
             </div>
+    
 </section>
 
 {% endblock %}
