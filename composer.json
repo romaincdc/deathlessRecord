@@ -11,6 +11,7 @@
         "doctrine/doctrine-bundle": "^2.9",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.14",
+        "easycorp/easyadmin-bundle": "^4.6",
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.18",
         "sensio/framework-extra-bundle": "^6.1",
@@ -99,7 +100,7 @@
         "symfony/css-selector": "6.2.*",
         "symfony/debug-bundle": "6.2.*",
         "symfony/maker-bundle": "^1.48",
-        "symfony/phpunit-bridge": "^6.2",
+        "symfony/phpunit-bridge": "*",
         "symfony/stopwatch": "6.2.*",
         "symfony/web-profiler-bundle": "6.2.*"
     }
