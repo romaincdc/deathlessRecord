@@ -34,7 +34,7 @@ class RegistrationFormType extends AbstractType
             ])
             ->add('address',TextType::class,[
                 'attr' => ['class' => 'form-control'],
-                'label' => 'addresse'
+                'label' => 'adresse'
             ])
             ->add('zipcode',TextType::class,[
                 'attr' => ['class' => 'form-control'],
@@ -51,7 +51,7 @@ class RegistrationFormType extends AbstractType
                         'message' => 'You should agree to our terms.',
                     ]),
                 ],
-                'label' => 'J\'accepte les conditions d\'utilisation du site'
+                'label' => 'J\'accepte les conditions d\'utilisation du site '
             ])
             ->add('plainPassword', PasswordType::class, [
                 // instead of being set onto the object directly,
